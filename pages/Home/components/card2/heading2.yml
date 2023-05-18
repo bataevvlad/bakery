@@ -1,0 +1,31 @@
+id: '16838993036450.12605232497858831'
+definitionId: heading
+styles:
+  xl:
+    fontSize:
+      customValue: 14
+      customUnit: px
+      themeDefaultOverridePropertyKey: baseTextFontSize
+    gridItem:
+      x: 0
+      y: 0
+      w: 9
+      h: 4
+properties:
+  name: heading2
+  text: |-
+    To: Your Recepient
+     From: Your best worker 
+  verticalAlignment: middle
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  overflowType:
+    value: none
+    dataValue: none
+    withData: false
+  alignment: left
+parentSlotId: '16838993036450.39720035527067865'
+index: 0
+actions: {}
+slots: []

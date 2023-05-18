@@ -1,0 +1,60 @@
+id: '16838993036450.6141487106839985'
+definitionId: card
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 8
+      y: 0
+      w: 16
+      h: 27
+    status:
+      value: success-light
+      dataValue: '#FFFFF'
+      withData: true
+    backgroundColor:
+      value: default
+      dataValue: default
+      withData: false
+  xs:
+    gridItem:
+      x: 12
+      y: 16
+      w: 12
+      h: 16
+properties:
+  name: card2
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  showLoading:
+    value: false
+    dataValue: 'false'
+    withData: false
+actions: {}
+index: 7
+slots:
+  - id: '16838993036450.39720035527067865'
+    name: header
+    children:
+      - heading2.yml
+  - id: '16838993036450.43319696276039066'
+    name: body
+    children:
+      - image2.yml
+      - text.yml
+      - text2.yml
+      - text3.yml
+      - text4.yml
+      - text5.yml
+      - text6.yml
+      - text7.yml
+      - text8.yml
+      - text9.yml
+      - text10.yml
+      - image3.yml
+      - text11.yml
+      - text12.yml
+  - id: '16838993036450.32107104201095193'
+    name: footer
+    children: []

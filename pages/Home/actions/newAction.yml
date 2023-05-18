@@ -1,0 +1,373 @@
+id: '16843132011530.8053502123759453'
+name: newAction
+nameConfigured: false
+steps:
+  - id: '16843132084720.46523028694494717'
+    type: customAsyncCode
+    name: code
+    params:
+      - type: asyncCode
+        value: >-
+          function downloadJSCode(code, fileName) {
+            const blob = new Blob([code], { type: 'application/javascript' });
+            const url = URL.createObjectURL(blob);
+
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = fileName;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+
+            URL.revokeObjectURL(url);
+          }
+
+
+          const htmlMessenger = `<tr style="margin: 0px; padding: 0px"><td
+          style="font-family: Roboto, RobotoDraft, Helvetica, Arial,sans-serif;
+          margin: 0px;padding: 0px;"><span style="margin: 0px; padding: 0px;
+          font-family: Verdana, Geneva, sans-serif; color: rgb(51, 102,
+          255);">${ui.select.value}:&nbsp;</span><span style="margin: 0px;
+          padding: 0px" ><a style="margin: 0px; padding: 0px; color: rgb(0, 0,
+          1); font-family: Verdana, Geneva,
+          sans-serif;">${ui.input7.value}</a></span></td></tr>`;
+
+
+          // Example usage
+
+          const jsCode = `
+
+          <div>
+            <table
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              style="
+                color: rgb(34, 34, 34);
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: small;
+                padding: 0px;
+                border-spacing: 0px;
+                border-collapse: collapse;
+              "
+            >
+              <tbody style="margin: 0px; padding: 0px">
+                <tr style="margin: 0px; padding: 0px">
+                  <td
+                    style="
+                      font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+                      margin: 0px;
+                      padding: 0px 15px 0px 8px;
+                      font-size: 1em;
+                    "
+                    valign="top"
+                  >
+                    <table
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      style="
+                        padding: 0px;
+                        border-spacing: 0px;
+                        border-collapse: collapse;
+                        line-height: 1.4;
+                        font-family: Verdana, Geneva, sans-serif;
+                        font-size: 11.7px;
+                        color: rgb(0, 0, 1);
+                      "
+                    >
+                      <tbody style="margin: 0px; padding: 0px">
+                        <tr style="margin: 0px; padding: 0px">
+                          <td
+                            style="
+                              font-family: Roboto, RobotoDraft, Helvetica, Arial,
+                                sans-serif;
+                              margin: 0px;
+                              padding: 0px;
+                            "
+                          >
+                            <div
+                              style="
+                                margin: 0px;
+                                padding: 0px;
+                                font-stretch: normal;
+                                font-size: 1.2em;
+                                line-height: normal;
+                                font-family: Verdana, Geneva, sans-serif;
+                              "
+                            >
+                              ${ui.input.value} ${ui.input2.value} &nbsp; 
+                            </div>
+                          </td>
+                        </tr>
+                        <tr style="margin: 0px; padding: 0px">
+                          <td
+                            style="
+                              font-family: Roboto, RobotoDraft, Helvetica, Arial,
+                                sans-serif;
+                              margin: 0px;
+                              padding: 4px 0px;
+                            "
+                          >
+                            <div
+                              style="
+                                margin: 0px;
+                                padding: 0px;
+                                font-family: Verdana, Geneva, sans-serif;
+                              "
+                            >
+                              ${ui.input3.value} | Akveo 
+                            </div>
+                            <div
+                              style="
+                                margin: 0px;
+                                padding: 0px;
+                                font-family: Verdana, Geneva, sans-serif;
+                              "
+                            >
+                              <br />
+                            </div>
+                          </td>
+                        </tr>
+                        <tr style="margin: 0px; padding: 0px"></tr>
+                      </tbody>
+                    </table>
+                    <table
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      style="
+                        padding: 0px;
+                        border-spacing: 0px;
+                        border-collapse: collapse;
+                        line-height: 1.4;
+                        font-family: Verdana, Geneva, sans-serif;
+                        font-size: 11.7px;
+                        color: rgb(0, 0, 1);
+                      "
+                    >
+                      <tbody style="margin: 0px; padding: 0px">
+                        <tr style="margin: 0px; padding: 0px">
+                          <td
+                            style="
+                              font-family: Roboto, RobotoDraft, Helvetica, Arial,
+                                sans-serif;
+                              margin: 0px;
+                              padding: 0px;
+                              vertical-align: top;
+                            "
+                          >
+                            <img
+                              height="96"
+                              src="https://sauibakeryprod.blob.core.windows.net/assets-container/assets/2osrhebbu3/images/Vm9ja7xM6F"
+                              width="96"
+                            />
+                          </td>
+                          <td
+                            style="
+                              font-family: Roboto, RobotoDraft, Helvetica, Arial,
+                                sans-serif;
+                              margin: 0px;
+                              padding: 0px 0px 0px 10px;
+                            "
+                          >
+                            <table
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              style="
+                                padding: 0px;
+                                border-spacing: 0px;
+                                border-collapse: collapse;
+                                line-height: 1.4;
+                                font-family: Verdana, Geneva, sans-serif;
+                                font-size: 1.2em;
+                              "
+                            >
+                              <tbody style="margin: 0px; padding: 0px">
+                                <tr style="margin: 0px; padding: 0px">
+                                  <td
+                                    style="
+                                      font-family: Roboto, RobotoDraft, Helvetica, Arial,
+                                        sans-serif;
+                                      margin: 0px;
+                                      padding: 0px;
+                                    "
+                                  >
+                                    <span
+                                      style="
+                                        margin: 0px;
+                                        padding: 0px;
+                                        font-family: Verdana, Geneva, sans-serif;
+                                        color: rgb(51, 102, 255);
+                                      "
+                                      >phone:&nbsp;</span
+                                    ><span style="margin: 0px; padding: 0px"
+                                      ><a
+                                        href="tel:${ui.input4.value}"
+                                        style="
+                                          margin: 0px;
+                                          padding: 0px;
+                                          color: rgb(0, 0, 1);
+                                          font-family: Verdana, Geneva, sans-serif;
+                                        "
+                                        target="_blank"
+                                        >${ui.input4.value}</a
+                                      ></span
+                                    >
+                                  </td>
+                                </tr>
+                                <tr style="margin: 0px; padding: 0px">
+                                  <td
+                                    style="
+                                      font-family: Roboto, RobotoDraft, Helvetica, Arial,
+                                        sans-serif;
+                                      margin: 0px;
+                                      padding: 0px;
+                                    "
+                                  >
+                                    <span
+                                      style="
+                                        margin: 0px;
+                                        padding: 0px;
+                                        font-family: Verdana, Geneva, sans-serif;
+                                        color: rgb(51, 102, 255);
+                                      "
+                                      >site:&nbsp;</span
+                                    ><span
+                                      style="
+                                        margin: 0px;
+                                        padding: 0px;
+                                        font-family: Verdana, Geneva, sans-serif;
+                                      "
+                                      ><a
+                                        href="https://sauibakeryprod.blob.core.windows.net/assets-container/assets/2osrhebbu3/images/xfzXrXtZGI"
+                                        style="
+                                          margin: 0px;
+                                          padding: 0px;
+                                          color: rgb(0, 0, 1);
+                                        "
+                                        target="_blank"
+                                        >www.akveo.com</a
+                                      ></span
+                                    >
+                                  </td>
+                                </tr>
+                                <tr style="margin: 0px; padding: 0px">
+                                  <td
+                                    style="
+                                      font-family: Roboto, RobotoDraft, Helvetica, Arial,
+                                        sans-serif;
+                                      margin: 0px;
+                                      padding: 0px;
+                                    "
+                                  >
+                                    <span
+                                      style="
+                                        margin: 0px;
+                                        padding: 0px;
+                                        font-family: Verdana, Geneva, sans-serif;
+                                        color: rgb(51, 102, 255);
+                                      "
+                                      >email:&nbsp;</span
+                                    ><span style="margin: 0px; padding: 0px"
+                                      ><a
+                                        href="mailto:${ui.input5.value}"
+                                        style="
+                                          margin: 0px;
+                                          padding: 0px;
+                                          color: rgb(0, 0, 1);
+                                          font-family: Verdana, Geneva, sans-serif;
+                                        "
+                                        target="_blank"
+                                        >${ui.input5.value}</a
+                                      ></span
+                                    >
+                                  </td>
+                                </tr>
+                                ${ui.select.value !== 'Without messenger' ? htmlMessenger : ''}
+                                <tr style="margin: 0px; padding: 0px">
+                                  <td
+                                    style="
+                                      font-family: Roboto, RobotoDraft, Helvetica, Arial,
+                                        sans-serif;
+                                      margin: 0px;
+                                      padding: 0px;
+                                    "
+                                  >
+                                    <span
+                                      style="
+                                        margin: 0px;
+                                        padding: 0px;
+                                        font-family: Verdana, Geneva, sans-serif;
+                                        color: rgb(51, 102, 255);
+                                      "
+                                      >address:&nbsp;</span
+                                    ><span
+                                      style="
+                                        margin: 0px;
+                                        padding: 0px;
+                                        font-family: Verdana, Geneva, sans-serif;
+                                      "
+                                      >${ui.input6.value}</span
+                                    >
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>&nbsp;</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      height="100"
+                      src="https://sauibakeryprod.blob.core.windows.net/assets-container/assets/2osrhebbu3/images/xfzXrXtZGI"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br />
+          </div>
+
+          `;
+
+          const fileName = `signatre_${ui.input2.value}.html`;
+
+
+          downloadJSCode(jsCode, fileName);
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: false
+singleStep: true
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+folder: false
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.newAction.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.newAction.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.newAction.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+index: 0

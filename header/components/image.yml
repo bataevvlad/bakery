@@ -1,0 +1,33 @@
+id: '16830252475760.14548464642502723'
+definitionId: image
+parentSlotId: '16830252413090.8353564448294692'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 0
+      w: 2
+      h: 2
+      minH: 2
+    src:
+      url: >-
+        https://uploads-ssl.webflow.com/5d2739e4cf8d9538f80af0a6/60770c61ae76e5691a94c238_logo-uibakery.svg
+      uploadUrl: ''
+      name: ''
+      active: url
+    fit: scale-down
+  xs:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 6
+      minH: 2
+properties:
+  name: image
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+actions: {}
+index: 0
+slots: []

@@ -1,0 +1,25 @@
+id: '16843114429040.16942101782452168'
+definitionId: text
+parentSlotId: '16838993036450.43319696276039066'
+styles:
+  xl:
+    gridItem:
+      x: 9
+      y: 6
+      w: 4
+      h: 1
+  xs:
+    gridItem:
+      x: 0
+      y: 15
+      w: 24
+      h: 1
+properties:
+  name: text7
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  value: wwww.akveo.com
+actions: {}
+index: 7
+slots: []

@@ -1,0 +1,31 @@
+id: '16838992292110.659595217092892'
+definitionId: stringEdit
+parentSlotId: '16838990798150.20690734578120495'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 14
+      w: 24
+      h: 3
+      maxH: 3
+  xs:
+    gridItem:
+      x: 0
+      y: 8
+      w: 24
+      h: 3
+      maxH: 3
+properties:
+  name: input4
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  labelConfig:
+    text: Phone number
+    position: vertical
+    align: left
+  iconPlacement: none
+actions: {}
+index: 3
+slots: []

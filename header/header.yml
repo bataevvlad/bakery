@@ -1,0 +1,18 @@
+id: '16830252413080.10303238043538054'
+name: content
+children:
+  - id: '16830252413090.5153771994339027'
+    definitionId: layoutHeader
+    parentSlotId: '16830252413080.10303238043538054'
+    styles: {}
+    properties:
+      name: layoutHeader
+      __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+        - xl
+        - xs
+    index: 0
+    slots:
+      - id: '16830252413090.8353564448294692'
+        name: content
+        children:
+          - components/image.yml

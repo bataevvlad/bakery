@@ -1,0 +1,11 @@
+storeItemList: []
+metadata:
+  favicon: ''
+  code: >-
+    <script
+    src="https://cdn.jsdelivr.net/npm/canvasjs@1.8.3/dist/canvasjs.min.js"></script>
+  title: New app
+  description: ''
+appSettings:
+  actions: {}
+  gridVersion: 1

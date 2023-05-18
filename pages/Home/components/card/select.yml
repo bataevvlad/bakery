@@ -1,0 +1,93 @@
+id: '16843120714780.8757645514072232'
+definitionId: selectWithAtomics
+parentSlotId: '16838990798150.20690734578120495'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 22
+      w: 24
+      h: 3
+      maxH: 3
+  xs:
+    gridItem:
+      x: 0
+      y: 20
+      w: 24
+      h: 2
+      maxH: 3
+properties:
+  options:
+    value:
+      - value: option_1
+        title: ''
+        __UIBAKERY__SYSTEM_ID__: '1'
+      - value: option_2
+        title: ''
+        __UIBAKERY__SYSTEM_ID__: '2'
+    dataValue: |-
+      [
+        {
+          "value": "skype",
+          "title": "Skype"
+        },
+        {
+          "value": "telegram",
+          "title": "Telegram"
+        },
+        {
+          "value": "whatsapp",
+          "title": "Whatsapp"
+        },
+          {
+          "value": "",
+          "title": "Without messenger"
+        }
+      ]
+    withData: true
+  name: select
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  optionValueKey: title
+  labelConfig:
+    text: Messenger
+    position: vertical
+    align: left
+  withOptionsAutocomplete: true
+  status:
+    value: basic
+    dataValue: basic
+    withData: false
+  disabled:
+    value: false
+    dataValue: 'false'
+    withData: false
+  multi: false
+  __UIBAKERY__SHOW__CONDITION__CODE__: ''
+actions: {}
+index: 7
+slots:
+  - id: '16843120714780.3638519315927282'
+    name: optionViewTypes
+    children:
+      - id: '16843120714880.8427404166494836'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+            color:
+              value: basic
+              dataValue: '#01063A'
+              withData: true
+        properties:
+          name: atomicString
+          prop: title
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          markdownSupport: false
+        parentSlotId: '16843120714780.3638519315927282'
+        index: 1
+        slots: []

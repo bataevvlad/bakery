@@ -1,0 +1,31 @@
+id: '16838991861090.1598298538923506'
+definitionId: stringEdit
+parentSlotId: '16838990798150.20690734578120495'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 2
+      w: 24
+      h: 3
+      maxH: 3
+  xs:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 2
+      maxH: 3
+properties:
+  name: input
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  labelConfig:
+    text: Name
+    position: vertical
+    align: left
+  iconPlacement: none
+actions: {}
+index: 0
+slots: []

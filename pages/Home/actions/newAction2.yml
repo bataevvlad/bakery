@@ -1,0 +1,108 @@
+id: '16843147060520.48735520526730514'
+name: newAction2
+nameConfigured: false
+steps:
+  - id: '16843147091330.8797797006191135'
+    type: customAsyncCode
+    name: code
+    params:
+      - type: asyncCode
+        value: >-
+          //Edge Blob polyfill
+          https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toBlob
+
+
+          if (!HTMLCanvasElement.prototype.toBlob) {
+             Object.defineProperty(HTMLCanvasElement.prototype, 'toBlob', {
+               value: function (callback, type, quality) {
+                 var canvas = this;
+                 setTimeout(function() {
+                   var binStr = atob( canvas.toDataURL(type, quality).split(',')[1] ),
+                   len = binStr.length,
+                   arr = new Uint8Array(len);
+
+                   for (var i = 0; i < len; i++ ) {
+                      arr[i] = binStr.charCodeAt(i);
+                   }
+
+                   callback( new Blob( [arr], {type: type || 'image/png'} ) );
+                 });
+               }
+            });
+          }
+
+
+          let ctx;
+
+          require('canvasjs/dist/canvasjs.js', function(CanvasJS){
+            ctx = CanvasJS.getContext('2d');
+          });
+
+
+          var data1 = '<svg xmlns="http://www.w3.org/2000/svg" width="200"
+          height="200">' +
+                     '<foreignObject width="100%" height="100%">' +
+                     '<div xmlns="http://www.w3.org/1999/xhtml" style="font-size:40px">' +
+                       '<em>I</em> like ' +
+                       '<span style="color:white; text-shadow:0 0 2px blue;">' +
+                       'cheese</span>' +
+                     '</div>' +
+                     '</foreignObject>' +
+                     '</svg>';
+              
+           dataRes = encodeURIComponent(data1);
+
+           
+          var img = new Image();
+
+
+          img.onload = function() {
+            ctx.drawImage(img, 0, 0);
+            console.log(canvas.toDataURL());
+           
+            canvas.toBlob(function(blob) {
+               var newImg = document.createElement('img'),
+               url = URL.createObjectURL(blob);
+
+               newImg.onload = function() {
+               // no longer need to read the blob so it's revoked
+               URL.revokeObjectURL(url);
+             };
+
+             newImg.src = url;
+             document.body.appendChild(newImg);
+           });
+          }
+
+
+          //img.src = "data:image/svg+xml," + dataRes
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: false
+singleStep: true
+actions:
+  success: []
+  error: []
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+folder: false
+parentId: null
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.newAction2.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.newAction2.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.newAction2.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+index: 1
